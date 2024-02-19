@@ -1,0 +1,29 @@
+﻿@model List<Enfermo>
+
+<div class="contenedor mt-5">
+    <h1>Enfermos</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Apellido</th>
+                <th>Direccion</th>
+                <th>Fecha</th>
+                <th>S</th>
+                <th>NSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Enfermo enf in Model)
+            {
+                <tr>
+                    <td>@enf.Apellido</td>
+                    <td>@enf.Direccion</td>
+                    <td>@enf.Fecha</td>
+                    <td>@enf.S</td>
+                    <td>@enf.NSS</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
