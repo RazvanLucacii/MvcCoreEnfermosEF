@@ -11,5 +11,9 @@ namespace MvcCoreEnfermosEF.Data
         public DbSet<Enfermo> Enfermos { get; set; }
 
         public DbSet<Doctor> Doctores { get; set; }
+
+        public DbSet<ViewEmpleado> ViewEmpleados { get; set; }
+
+        public DbSet<Trabajador> Trabajadores { get; set; }
     }
 }
